@@ -1,14 +1,14 @@
-		<form method="post" action="index.php">
-		<table style="position:absolute; top:50%; left:50%; margin:-100px 0px 0px -150px; ">
-		<tr><th colspan="2">Web Information System Portal</th></tr>
-		<tr>
-		<td>username (ชื่อผู้ใช้)</td>
-		<td><input type="text" size="10" name="muser"/></td>
-		</tr>
-		<tr>
-		<td>password (รหัสผ่าน)</td>	
-		<td><input type="password" size="10" name="mpass"></td>
-		</tr>
-		<tr><td colspan="2"><center><input type="submit" value="Sign In"/> 
-		<input type="submit" value="Sign Up"/></center></td></tr>
-		</form>
+<div class="wrapper">
+	<form class="form-signin" method="post" action="index.php">
+		<h2 class="form-signin-heading text-center">Log In</h2>
+		<input type="text" class="form-control" name="muser" placeholder="Enter User Name" 
+		required="" autofocus="" />
+		<input type="password" class="form-control" name="mpass" placeholder="Enter Password" 
+		required="" />
+		<label class="checkbox">
+			<input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe" />
+			Remember Me
+		</label>
+		<button class="btn btn-lg btn-primary btn-block">Log In</button>
+	</form>
+</div>
