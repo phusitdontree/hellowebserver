@@ -6,6 +6,9 @@ if(isset($_GET["app_id"])){
 		$row = $res->fetch_assoc();
 		include($row["link"]);
 	}
+	if($_GET["app_id"]==-1){
+		include("users.php");
+	}
 }
 
 ?>

@@ -1,14 +1,14 @@
-		<?php
-			$q="select distinct menu.menuid,menuname from permissions left join menu on permissions.menuid=menu.menuid where uid=".$thisuserid;
-			//echo $q;
-			$result=$conn->query($q);
-			if ($conn->connect_error) {
-    			die("Connect Error (" . $conn->connect_errno . ") ". $conn->connect_error);
-			}
-			
-		?>
-<nav class="navbar navbar-expand-md navbar-dark bg-primary" rounded>
-	<a class="navbar-brand" href="#">
+<?php
+	$q="select distinct menu.menuid,menuname from permissions left join menu on permissions.menuid=menu.menuid where uid=".$thisuserid;
+	//echo $q;
+	$result=$conn->query($q);
+	if ($conn->connect_error) {
+		die("Connect Error (" . $conn->connect_errno . ") ". $conn->connect_error);
+	}
+	
+?>
+<nav class="navbar navbar-expand-md navbar-dark bg-primary small py-0" rounded>
+	<a class="navbar-brand small" href="#">
 		<img src="img/marinelogo.png" width="30" alt="">
 		MAPIS
 	</a>
@@ -59,7 +59,7 @@
 				<?=$thisusername?>
 				</a>
 				<div class="dropdown-menu" area-labelledby="userDropdown">
-					<a class="dropdown-item">Config</a>
+					<a class="dropdown-item" href="index.php?id=<?=$thisuserid?>&app_id=-1">Users</a>
 					<a class="dropdown-item">Email</a>
 					<a class="dropdown-item">Contact Admin</a>
 				</div>
