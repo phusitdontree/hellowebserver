@@ -7,6 +7,7 @@ include ("configs/connectstring.php");
 // Create connection
 $conn = new mysqli($host, $user, $pass,$db);
 $conn->query("SET NAMES UTF8");
+
 //$conn->query("SET NAMES TIS-620");
 // Check connection
 if ($conn->connect_error) {
