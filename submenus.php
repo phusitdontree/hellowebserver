@@ -72,7 +72,7 @@
 			<input type="checkbox"  name="edit_pm3" id="edit_pm3" /> Delete
 			<input type="checkbox"  name="edit_pm4" id="edit_pm4" /> Special
 			<input type="hidden" name="pmsubmenuid" id="pmsubmenuid" value="'.$myid.'"/>
-		</td></tr>';
+		</td></tr>
 		
 			</tfoot>
 			</table>

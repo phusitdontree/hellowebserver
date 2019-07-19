@@ -6,7 +6,7 @@ if(isset($_GET["app_id"])){
 		$row = $res->fetch_assoc();
 		$link=explode("?",$row["link"]);
 		//if(!empty($link[1])) echo $link[1];
-
+		
 		include($link[0]);
 	}
 	$app_id=$_GET["app_id"];
